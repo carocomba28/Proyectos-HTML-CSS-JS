@@ -1,0 +1,88 @@
+* {
+  font-family: "Nova Square", sans-serif;
+}
+
+#board,
+.boardInfo {
+  max-width: 500px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+#start,
+.boardInfo {
+  font-size: 25px;
+}
+
+#gameOver {
+  display: none;
+}
+
+.boardInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#boardContainer {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+#start {
+  background-color: red;
+  border: none;
+  color: white;
+}
+
+#playAgain {
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+#gameOverText {
+  font-size: 40px;
+}
+
+#finalScore {
+  padding: 5px;
+  font-size: 20px;
+}
+
+#scoreBoard {
+  display: inline-flex;
+}
+
+.square {
+  aspect-ratio: 1;
+}
+
+.emptySquare {
+  background-color: #4a4aff;
+}
+
+.snakeSquare {
+  background-color: #30c71e;
+}
+
+.foodSquare {
+  background-color: #ff0800;
+}
+
+#gameOver {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
