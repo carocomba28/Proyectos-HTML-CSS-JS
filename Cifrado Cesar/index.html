@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrador César</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Raleway:wght@100&family=Red+Hat+Display:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1>Cifrador César</h1>
+        <form id="cifrador" autocomplete="off">
+            <input type="text" name="text" id="input-original" spellcheck="false" placeholder="Ingrese el texto...">
+        </form>
+        <div id="resultado"></div>
+        <div class="rango">
+            <input type="range" value="10" min="1" max="20" id="rango"
+                oninput="this.nextElementSibling.value = this.value">
+            <output>10</output>
+        </div>
+    </main>
+</body>
+
+</html>

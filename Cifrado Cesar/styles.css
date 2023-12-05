@@ -1,0 +1,79 @@
+* {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+    --color-terminal: #31333e;
+    --borde-redondo: 4px;
+}
+
+body {
+    background-color: #5b467f;;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+main {
+    padding: 20px;
+    box-shadow: 8px 8px 35px 8px rgb(0, 0, 0/75%);
+    border-radius: var(--borde-redondo);
+}
+
+h1 {
+    margin: 0;
+}
+
+#input-original, #resultado {
+    background-color: var(--color-terminal);
+    width: -webkit-fill-available;
+}
+
+#input-original {
+    padding: 10px;
+    margin: 10px 0 0;
+    color: white;
+    border-top-left-radius: var(--borde-redondo);
+    border-top-right-radius: var(--borde-redondo);
+}
+
+#resultado {
+    height: 20px;
+    color: #5af78d;
+    padding: 0 10px 10px;
+    border-bottom-left-radius: var(--borde-redondo);
+    border-bottom-right-radius: var(--borde-redondo);
+}
+
+.rango {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    align-items: center;
+    text-align: center;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    border-radius: var(--borde-redondo);
+    background-color: var(--color-terminal);
+    margin: 0;
+    padding: 0 5px;
+    height: 20px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
